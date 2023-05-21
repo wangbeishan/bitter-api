@@ -9,14 +9,7 @@ const app = express()
 
 app.use(bodyParser.json())
 
-
-const corsOptions = {
-    allowedOrigins: "*",
-    origin: "https://bitter-app.netlify.app",
-    allowedHeaders: ['Content-Type', 'Authorization']
-}
-
-app.use(cors(corsOptions))
+app.use(cors())
 
 const DBurl = 'mongodb+srv://wangbeishan9527:SwB9tSvCYDcHti0i@cluster0.vcvir4c.mongodb.net/?retryWrites=true&w=majority'
 mongoose.connect(DBurl, { 
