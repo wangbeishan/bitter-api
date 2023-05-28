@@ -16,7 +16,7 @@ const transporter = nodemailer.createTransport({
 
 function sendMail(email) {
     const emailOption = {
-        from: 'wangbeishan1900@gmail.com',
+        from: 'wangbeishan9527@gmail.com',
         to: email,
         subject: '请验证你的邮箱',
         html: `
@@ -56,7 +56,7 @@ function sendMail(email) {
             <body>
                 <h1>验证您的邮箱地址</h1>
                 <p>感谢您注册我们的服务！</p>
-                <p>请单击链接 <a href="http://localhost:8080/verify?email=${email}&token=${token}"> 链接 </a> 以验证您的邮箱地址</p>
+                <p>请单击链接 <a href="https://bitter-api.onrender.com/verify?email=${email}&token=${token}"> 链接 </a> 以验证您的邮箱地址</p>
                 <p>如果单击链接无效，请复制并粘贴该链接到您的浏览器中。</p>
                 <p>如果您没有注册我们的服务，请忽略此邮件。</p>
                 <p>谢谢！</p>
